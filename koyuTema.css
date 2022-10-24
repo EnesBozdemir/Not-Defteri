@@ -1,0 +1,206 @@
+body, html {
+    margin:0;
+    padding:0;
+    height: 100%; 
+    overflow: hidden;
+}
+
+.txtKutusu {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 30px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+
+.metinKutusu {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    resize:none;
+    outline:none;
+    border:0px;
+    box-sizing: border-box;
+    cursor:auto;
+    overflow-y:scroll;
+    background-color: #252525;
+    color: #c8c8c8;
+}
+
+.metinKutusu:focus{
+    border:0px;
+    outline:none;
+}
+
+.metinKutusu::-webkit-scrollbar {/*Kaydırma çubuğunun cssleri*/
+    width: 18px;     
+    height: 1px;
+}
+.metinKutusu::-webkit-scrollbar-thumb {/*Kaydırma çubuğunun içindeki dikdörtgen*/
+    background: #353535;
+}
+.metinKutusu::-webkit-scrollbar-track {
+    background: #252525;
+    border-left: solid 1px #333333;
+}
+
+.alt {
+    height: 19px;
+    width: 100%;
+    font-size: 12px;
+    color: #999999;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid #3c3c3c;
+    background-color: #3c3c3c;
+}
+
+.txtSayi {
+    padding-right: 20px;
+}
+
+
+.baslik {
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+    height: 29px;
+    width: 100%;
+    background: #3c3c3c url(resimler/Foobar-icon.png) no-repeat 2px 2px;
+    border-bottom: 1px solid #3c3c3c;
+    position: absolute;
+    top: 0;
+    z-index:1;
+}
+
+/*Menu************************************************/
+.menuListesi {
+    width: 210px;
+    margin: 0;
+    padding: 0;
+    float: left;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    line-height: 28px;
+    font-size: 14px;
+    margin-left: 34px;
+}
+li {
+    float: left;
+    -webkit-user-select: none;
+    -webkit-app-region: no-drag;
+}
+li p, .acilirTus {
+    display: inline-block;
+    color: #cccccc;
+    text-align: center;
+    padding: 1px 6px;
+    text-decoration: none;
+    margin: 0;
+}
+li p:hover, .acilirPen:hover .acilirTus {
+    background-color: #505050;
+}
+li.acilirPen {
+    display: inline-block;
+}
+.acilirPen-icerik {
+    display: none;
+    position: absolute;
+    background-color: #333333;
+    min-width: 190px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+}
+.acilirPen-icerik p {
+    color: #cccccc;
+    padding: 1px 16px;
+    margin: 0;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.acilirPen-icerik p:hover {
+    background-color: #505050;
+}
+.show {
+    display: block;
+}
+
+.kisayol{
+    float: right;
+    padding-left: 10px;
+    font-size: 13px;
+    color: #999999;
+}
+.menuB{
+    border-bottom: 1px solid #444444;
+}
+
+.ctrlTus {
+    -webkit-user-select: none;
+    -webkit-app-region: no-drag;
+    height: 29px;
+    width: 120px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.ctrlTus p {
+    width: 40px;
+    height: 29px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    line-height: 29px;
+    display: block;
+}
+
+.pen_kucuk {
+    background: url(resimler/ctrl-btn.png) no-repeat 0 0;
+}
+.ctrlTus p:hover {
+    background-color: #505050 !important;
+}
+.pen_buyuk {
+    background: url(resimler/ctrl-btn.png) no-repeat 0 -30px;
+}
+.pen_kapat {
+    background: url(resimler/ctrl-btn.png) no-repeat 0 -90px;
+}
+#pen_kapat:hover {
+    background: #cb2c2c url(resimler/ctrl-btn.png) no-repeat -40px -90px !important;
+}
+
+.anaBaslik {
+    height: 29px;
+    font-size: 13px;
+    line-height: 30px;
+    margin-left: 210px;
+    margin-right: 120px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    top: 0;
+    color: #cccccc;
+}
+
+.ustte {
+    -webkit-user-select: none;
+    -webkit-app-region: no-drag;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}

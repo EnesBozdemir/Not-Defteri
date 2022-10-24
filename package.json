@@ -1,0 +1,15 @@
+{
+  "name": "Not Defteri",
+  "description": "Not tutan electron uygulaması",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "notdefteri"
+  ],
+  "author": "Enes Bozdemir, Furkan Kaya",
+  "devDependencies": {
+    "electron": "^7.0.0"
+  }
+}

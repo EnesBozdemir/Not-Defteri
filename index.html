@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link id="tema_css" rel="stylesheet" href="./Tema.css" type="text/css" media="screen"/>
+    <title>Not Defteri</title>
+  </head>
+  <body>
+    <div class="baslik">
+      <div class="ustte"></div>
+      <div class="menuListesi">
+          <ul>
+              <li class="acilirPen">
+                  <p id="a" class="acilirTus" onclick="sekmeGoster(this)">Belge</p>
+                  <div class="acilirPen-icerik t" id="acilirPen-a">
+                      <p onclick="menuTus('yeni')">Yeni<span class="kisayol">Ctrl+N</span></p>
+                      <p onclick="menuTus('ac')">Aç<span class="kisayol">Ctrl+O</span></p>
+                      <p onclick="menuTus('kaydet')">Kaydet<span class="kisayol">Ctrl+S</span></p>
+                      <p onclick="menuTus('farkliKaydet')" class="menuB">Farklı Kaydet<span class="kisayol">Ctrl+Shift+S</span></p>
+                      <p onclick="penCtrlTus('pen_kapat')">Kapat<span class="kisayol">Ctrl+E</span></p>
+                  </div>
+              </li>
+              <li class="acilirPen">
+                  <p id="b" class="acilirTus" onclick="sekmeGoster(this)">Düzenle</p>
+                  <div class="acilirPen-icerik t" id="acilirPen-b">
+                      <p onclick="belgeKomutu('geri')">Geri<span class="kisayol">Ctrl+Z</span></p>
+                      <p onclick="belgeKomutu('ileri')" class="menuB">İleri<span class="kisayol">Ctrl+Y</span></p>
+                      <p onclick="belgeKomutu('kes')">Kes<span class="kisayol">Ctrl+X</span></p>
+                      <p onclick="belgeKomutu('kopyala')">Kopyala<span class="kisayol">Ctrl+C</span></p>
+                      <p onclick="belgeKomutu('yapistir')">Yapıştır<span class="kisayol">Ctrl+V</span></p>
+                      <p onclick="belgeKomutu('sil')" class="menuB">Sil<span class="kisayol">Ctrl+D</span></p>
+                      <p onclick="belgeKomutu('hepsiniSec')">Hepsini Seç<span class="kisayol">Ctrl+A</span></p>
+                  </div>
+              </li>
+              <li class="acilirPen">
+                <p id="c" class="acilirTus" onclick="sekmeGoster(this)">Yardım</p>
+                  <div class="acilirPen-icerik t" id="acilirPen-c">
+                    <p onclick="tema()">Tema</p>
+                    <p onclick="hakkinda()">Hakkında...</p>
+                  </div>
+              </li>
+          </ul>
+      </div>
+      <div id="anaBaslik" class="anaBaslik">Not Defteri</div>
+      <div class="ctrlTus">
+        <p id="pen_kucuk" class="pen_kucuk" onclick="penCtrlTus('pen_kucuk')"></p>
+        <p id="pen_buyuk" class="pen_buyuk" onclick="penCtrlTus('pen_buyuk')"></p>
+        <p id="pen_kapat" class="pen_kapat" onclick="penCtrlTus('pen_kapat')"></p>
+      </div>
+    </div>
+    <div class="txtKutusu"><textarea class="metinKutusu" id="metinKutusu"></textarea></div>
+    <div class="alt"><span class="txtSayi" id="txtSayi"></span></div>
+    <script src="./isleyici.js"></script>
+  </body>
+</html>
